@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculater</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="calculater_box">
+            <div class="top">
+                <span id="clear" onclick="handleClear()">C</span>
+                <span id="screen"></span>
+            </div>
+
+            <div class="keys">
+                <span onclick="pressNumber(8)">8</span>
+                <span onclick="pressNumber(7)">7</span>
+                <span onclick="pressNumber(9)">9</span>
+                <span id="multiple" class="operator" onclick="pressOperator('multiple')">×</span>
+                <span onclick="pressNumber(4)">4</span>
+                <span onclick="pressNumber(5)">5</span>
+                <span onclick="pressNumber(6)">6</span>
+                <span id="devide" class="operator" onclick="pressOperator('devide')">÷</span>
+                <span onclick="pressNumber(1)">1</span>
+                <span onclick="pressNumber(2)">2</span>
+                <span onclick="pressNumber(3)">3</span>
+                <span id="minus" class="operator" onclick="pressOperator('minus')">-</span>
+                <span onclick="pressNumber(0)">0</span>
+                <span onclick="pressDot()">.</span>
+                <span class="equal " onclick="pressEqual()">=</span>
+                <span id="plus" class="operator " onclick="pressOperator('plus')">+</span>
+            </div>
+        </div>
+
+
+
+
+        <script src="./script.js"></script>
+</body>
+
+</html>
